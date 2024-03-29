@@ -8,7 +8,7 @@ const config: Config = {
 	],
 	theme: {
 		screens: {
-			mobile: "375px"
+			mobile: "375px",
 		},
 		colors: {
 			white: "hsl(0, 0%, 100%)",
@@ -20,6 +20,15 @@ const config: Config = {
 		backgroundImage: {
 			desktop: "url('/assets/images/background-pattern-desktop.svg')",
 			mobile: "url('/assets/images/background-pattern-mobile.svg')",
+		},
+		fontSize: {
+			h1: "56px",
+			h2: "18px",
+		},
+		extend: {
+			boxShadow: {
+				"3xl": "0 35px 60px 0px rgba(0, 0, 0, 0.3)",
+			},
 		},
 	},
 	plugins: [],
