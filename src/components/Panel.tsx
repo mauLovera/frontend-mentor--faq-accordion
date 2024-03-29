@@ -16,7 +16,7 @@ export default function Panel({ heading, text, defaultOpen }: Panel) {
         <h2 className="text-h2 font-semibold text-dark-purple transition-colors duration-300 group-hover:text-bright-purple">
           {heading}
         </h2>
-        <button className="grid self-start focus:rounded-full focus:outline-bright-purple">
+        <button className="grid self-start focus:rounded-full focus:outline-bright-purple" aria-label="accordion panel expand">
           <span
             style={{ gridColumn: 1, gridRow: 1 }}
             className={`transition-all duration-300`}
