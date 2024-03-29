@@ -1,20 +1,27 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
 const config: Config = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-    },
-  },
-  plugins: [],
-};
-export default config;
+	content: [
+		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+		"./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+	],
+	theme: {
+		screens: {
+			mobile: "375px"
+		},
+		colors: {
+			white: "hsl(0, 0%, 100%)",
+			"bright-purple": "hsl(281, 87%, 54%)",
+			"light-pink": "hsl(275, 100%, 97%)",
+			"grayish-purple": "hsl(292, 16%, 49%)",
+			"dark-purple": "hsl(292, 42%, 14%)",
+		},
+		backgroundImage: {
+			desktop: "url('/assets/images/background-pattern-desktop.svg')",
+			mobile: "url('/assets/images/background-pattern-mobile.svg')",
+		},
+	},
+	plugins: [],
+}
+export default config
