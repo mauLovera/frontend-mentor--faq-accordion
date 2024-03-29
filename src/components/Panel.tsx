@@ -10,7 +10,7 @@ export default function Panel({ heading, text, defaultOpen }: Panel) {
   return (
     <section className="overflow-hidden px-[42px] py-6">
       <header
-        className={`group flex cursor-pointer items-center justify-between gap-12 mobile:gap-6`}
+        className={`group flex cursor-pointer items-center justify-between gap-12 mobile:gap-4`}
         onClick={() => setOpen(!open)}
       >
         <h2 className="text-h2 font-semibold text-dark-purple transition-colors duration-300 group-hover:text-bright-purple">
