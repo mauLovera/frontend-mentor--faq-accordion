@@ -8,7 +8,7 @@ export default function ToggleIcon({ open }: { open: boolean }) {
 			viewBox="0 0 30 31"
 		>
 			<path
-				className={`origin-center transition-all duration-300 group-hover:scale-110 ${open
+				className={`size-6 sm:size-[30px] origin-center transition-all duration-300 group-hover:scale-110 ${open
 					? "fill-dark-purple group-hover:fill-bright-purple"
 					: "fill-bright-purple"
 					}`}

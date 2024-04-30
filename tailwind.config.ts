@@ -9,6 +9,7 @@ const config: Config = {
 	theme: {
 		screens: {
 			mobile: "375px",
+			sm: "450px",
 		},
 		colors: {
 			white: "hsl(0, 0%, 100%)",
@@ -21,14 +22,14 @@ const config: Config = {
 			desktop: "url('/assets/images/background-pattern-desktop.svg')",
 			mobile: "url('/assets/images/background-pattern-mobile.svg')",
 		},
-		fontSize: {
-			h1: "56px",
-			h2: "18px",
-		},
 		extend: {
 			boxShadow: {
 				"3xl": "0 35px 60px 0px rgba(0, 0, 0, 0.3)",
 			},
+			fontSize: {
+				"6xl": "56px",
+				"3xl": "32px"
+			}
 		},
 	},
 	plugins: [],

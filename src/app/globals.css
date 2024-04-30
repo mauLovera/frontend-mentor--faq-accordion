@@ -2,10 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  *,
-  *::before,
-  *::after {
-    line-height: 1.5 !important;
-  }
-}
