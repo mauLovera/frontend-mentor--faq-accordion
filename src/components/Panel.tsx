@@ -11,11 +11,11 @@ export default function Panel({ heading, text, defaultOpen }: Panel) {
     <section className="sm:mx-[42px] sm:py-6 mx-6 overflow-hidden border-b border-light-pink py-5 last-of-type:border-none last-of-type:pb-0">
       <header
         className={
-          "sm:gap-4 group flex cursor-pointer items-center justify-between gap-3"
+          "sm:gap-6 group flex cursor-pointer items-center justify-between gap-4"
         }
         onClick={() => setOpen(!open)}
       >
-        <h2 className="text-base sm:text-lg font-semibold text-dark-purple transition-colors duration-300 group-hover:text-bright-purple">
+        <h2 className="text-base sm:text-lg sm:leading-[1.17] font-semibold text-dark-purple transition-colors duration-300 group-hover:text-bright-purple leading-[1.17]">
           {heading}
         </h2>
         <button

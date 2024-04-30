@@ -30,9 +30,11 @@ const panels: Panel[] = [
 export default function Accordion() {
   return (
     <section className="sm:py-10 max-w-[600px] rounded-2xl bg-white py-6 shadow-3xl shadow-grayish-purple/25">
-      <header className="flex items-center gap-6 px-6 sm:px-[42px]">
+      <header className="sm:px-[42px] flex items-center gap-6 px-6">
         <StarIcon />
-        <h1 className="text-3xl sm:text-6xl font-bold">FAQs</h1>
+        <h1 className="text-3xl sm:text-6xl sm:leading-[1.17] font-bold leading-[1.17] text-dark-purple">
+          FAQs
+        </h1>
       </header>
       {panels.map(({ heading, text, defaultOpen }, index) => (
         <Panel
