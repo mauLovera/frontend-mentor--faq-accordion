@@ -11,7 +11,7 @@ export default function Panel({ heading, text, defaultOpen }: Panel) {
     <section className="sm:mx-[42px] sm:py-6 mx-6 overflow-hidden border-b border-light-pink py-5 last-of-type:border-none last-of-type:pb-0">
       <header
         className={
-          "sm:gap-8 group flex cursor-pointer items-center justify-between gap-6"
+          "sm:gap-4 group flex cursor-pointer items-center justify-between gap-3"
         }
         onClick={() => setOpen(!open)}
       >
